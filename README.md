@@ -23,8 +23,9 @@ introduced which controlled the hardness.
 
 However, non-linearity and exposure to the whole dataset in a random order can also be realized
 by below means,
-➢ Variation in hardness which is very essential for the model to actually explore the loss plot.
-➢ Introducing the model to each class as a reference at-least once, which doesn’t happen in
+
+* Variation in hardness which is very essential for the model to actually explore the loss plot.
+* Introducing the model to each class as a reference at-least once, which doesn’t happen in
 huge datasets due to random selection of triplet references.
 
 Extending the use of the control parameter introduced in smart mining technique described above,
@@ -116,7 +117,7 @@ of overfitting and catastrophic forgetting and can be further tuned to overcome 
  
 Usage:
 ------------------
- 
+` 
 input = Input(shape=(HEIGHT, WIDTH, CHANNELS))
 image_model = tf.keras.applications.InceptionV3(include_top=False,
                                                     weights='imagenet')
@@ -141,7 +142,7 @@ num_hardness_cycles = 70        # number of sigmoid cycles (should be >=1) -- de
 #get filename lists
 
 train_ref, train_pos, train_neg, test_ref, test_pos, test_neg = create_data(data_filename, catalog_filename, train_test_split_ratio, ycolname, xcolname, total_data_points=total_data_points, hardness_threshold=hardness_threshold, num_hardness_cycles=num_hardness_cycles)
-
+`
 
 Code References
 ------------------
