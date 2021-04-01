@@ -54,6 +54,7 @@ plot and train with a non-linearly varying hardness over time. In light of tripl
 requirements, the best fit for this would be a general logistic sigmoid function,
 
 ![plot](./logistic_sigmoid.png)
+
 Source: https://en.wikipedia.org/wiki/Generalised_logistic_function
 
 The slope for the logistic sigmoid function was adjusted using the growth rate and the carrying
@@ -61,6 +62,7 @@ capacity is set to the threshold control parameter provided by user. A sample se
 below,
 
 ![plot](./sigmoid_sequencing.png)
+
 Figure 1 : Hardness sigmoid sequencing ( scaled down by 10 )
 
 The above plot is a sigmoid hardness sequence on a dataset of 10,000 images. The hardness
@@ -84,6 +86,7 @@ distribution sequence. The visual comparison plot between the different mining m
 respective hardness distribution over one epoch, is given below,
 
 ![plot](./cyclic_sigmoid_sequencer.png)
+
 Figure 2 : Triplet mining methods and the respective hardness with respect to time through 7000 triplets
 
 The different triplet mining methods were compared on a dataset of 70,000 triplets mined from the
