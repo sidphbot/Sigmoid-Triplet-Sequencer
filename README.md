@@ -53,7 +53,6 @@ a non-linear function like sine curve or a sigmoid curve, the model is forced to
 plot and train with a non-linearly varying hardness over time. In light of triplet network specific
 requirements, the best fit for this would be a general logistic sigmoid function,
 
-![alt_text](https://github.com/sidphbot/Sigmoid-Triplet-Sequencer/blob/master/logistic_sigmoid.png?raw=true)
 ![plot](./logistic_sigmoid.png)
 Source: https://en.wikipedia.org/wiki/Generalised_logistic_function
 
@@ -61,7 +60,7 @@ The slope for the logistic sigmoid function was adjusted using the growth rate a
 capacity is set to the threshold control parameter provided by user. A sample sequence is given
 below,
 
-![cyclic_sigmoid_sequencer](https://github.com/sidphbot/Sigmoid-Triplet-Sequencer/blob/master/cyclic_sigmoid_sequencer.png?raw=true)
+![plot](./sigmoid_sequencing.png)
 Figure 1 : Hardness sigmoid sequencing ( scaled down by 10 )
 
 The above plot is a sigmoid hardness sequence on a dataset of 10,000 images. The hardness
@@ -84,7 +83,7 @@ amounting to 1000 triplets per cycle to be found from the whole dataset with the
 distribution sequence. The visual comparison plot between the different mining methods and the
 respective hardness distribution over one epoch, is given below,
 
-![sigmoid_sequencer](https://github.com/sidphbot/Sigmoid-Triplet-Sequencer/blob/master/sigmoid_sequencing.png?raw=true)
+![plot](./cyclic_sigmoid_sequencer.png)
 Figure 2 : Triplet mining methods and the respective hardness with respect to time through 7000 triplets
 
 The different triplet mining methods were compared on a dataset of 70,000 triplets mined from the
