@@ -53,7 +53,8 @@ a non-linear function like sine curve or a sigmoid curve, the model is forced to
 plot and train with a non-linearly varying hardness over time. In light of triplet network specific
 requirements, the best fit for this would be a general logistic sigmoid function,
 
-![logistic_sigmoid](https://github.com/sidphbot/Sigmoid-Triplet-Sequencer/blob/master/logistic_sigmoid.png?raw=true)
+![alt_text](https://github.com/sidphbot/Sigmoid-Triplet-Sequencer/blob/master/logistic_sigmoid.png?raw=true)
+![plot](./logistic_sigmoid.png)
 Source: https://en.wikipedia.org/wiki/Generalised_logistic_function
 
 The slope for the logistic sigmoid function was adjusted using the growth rate and the carrying
