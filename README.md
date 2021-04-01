@@ -122,6 +122,12 @@ of overfitting and catastrophic forgetting and can be further tuned to overcome 
  
 ## 4. Usage:
 ------------------
+
+This repo is intended only for sharing the triplet mining methodologies and comparision results and hence the code for the model is not included here.
+
+The below code will enable you to implement the Sigmoid triplet hardness sequencing approach to find the triplets to be further used in a model of choice.
+
+
 ```
 input = Input(shape=(HEIGHT, WIDTH, CHANNELS))
 image_model = tf.keras.applications.InceptionV3(include_top=False,
