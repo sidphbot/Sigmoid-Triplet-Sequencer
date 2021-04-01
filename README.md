@@ -1,10 +1,10 @@
 # Sigmoid-Triplet-Sequencer
  Sigmoid triplet hardness sequencing  for triplet loss
  
-Why? 
+# Why? 
 ------------------
 
-## MODEL COLLAPSE
+## 1. MODEL COLLAPSE
 
 The Triplet loss and other similarity-based approaches including Siamese twin networks and Generative models suffer from two major issues in general. This is being researched heavily and there are various handling strategies are shared in the community [7]
 
@@ -13,7 +13,7 @@ model collapse. When a model does not find a proper gradient for long, it starts
 embeddings for all. Simply speaking the features fall to 1, this means that the loss falls down to
 margin value, this is how model collapse is detected.
 
-## Proposed Sigmoid triplet hardness sequencing approach
+## 2. Proposed Sigmoid triplet hardness sequencing approach
 
 A triplet network needs to start off with easy triplets in order to not take too much of a loss from
 the start and eventually collapse, hence semi-hard approach is preferred over hardest negative
@@ -92,7 +92,7 @@ Sigmoid hardness sequencing method, still show signs of overfitting and catastro
 accuracy bump of 30% show that the sigmoid triplet hardness sequencing approach proposed
 herein was seen to overcome the model collapse issue, despite the low-class variance limitation. 
 
-Evaluation Results: 
+## 3. Evaluation Results: 
 
 Dataset: 70,000 triplets – 70,000 images – 35,000 jewelry products (1:2 class to sample ratio)
 
@@ -115,9 +115,9 @@ limitation. The results for the proposed Sigmoid hardness sequencing method, sti
 of overfitting and catastrophic forgetting and can be further tuned to overcome the same.
 
  
-Usage:
+## 4. Usage:
 ------------------
-` 
+```
 input = Input(shape=(HEIGHT, WIDTH, CHANNELS))
 image_model = tf.keras.applications.InceptionV3(include_top=False,
                                                     weights='imagenet')
@@ -142,20 +142,20 @@ num_hardness_cycles = 70        # number of sigmoid cycles (should be >=1) -- de
 #get filename lists
 
 train_ref, train_pos, train_neg, test_ref, test_pos, test_neg = create_data(data_filename, catalog_filename, train_test_split_ratio, ycolname, xcolname, total_data_points=total_data_points, hardness_threshold=hardness_threshold, num_hardness_cycles=num_hardness_cycles)
-`
+```
 
 Code References
 ------------------
 
-• Tensorflow Documentation
+* Tensorflow Documentation 
 https://www.tensorflow.org/api_docs
-• Keras Documentation
+* Keras Documentation
 https://keras.io/api/
-• Github - Gombru – ranking Loss
+* Github - Gombru – ranking Loss
 https://gombru.github.io/2019/04/03/ranking_loss/
-• Towards Data Science - Image similarity using Triplet Loss - Shibsankar Das
+* Towards Data Science - Image similarity using Triplet Loss - Shibsankar Das
 https://towardsdatascience.com/image-similarity-using-triplet-loss-3744c0f67973
-• Github – adambielski – Siamese-triplet
+* Github – adambielski – Siamese-triplet
 https://github.com/adambielski/siamese-triplet
 
 
