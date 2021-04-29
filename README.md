@@ -184,4 +184,3 @@ Bibliography
 9. B. G. Vijay Kumar and Ben Harwood and Gustavo Carneiro and Ian D. Reid and Tom Drummond 2017. Smart Mining for Deep Metric Learning. CoRR, abs/1704.01285.
 
 
-PS. I am a student, If you find it useful consider giving me a shoutback, mention or like please :)
