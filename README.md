@@ -130,12 +130,6 @@ The below code will enable you to implement the Sigmoid triplet hardness sequenc
 
 
 ```
-input = Input(shape=(HEIGHT, WIDTH, CHANNELS))
-image_model = tf.keras.applications.InceptionV3(include_top=False,
-                                                    weights='imagenet')
-encoder = Model(inputs=input, outputs=image_model.outputs, name="encoder")
-
-
 #set params
 
 data_filename = 'train.csv'
